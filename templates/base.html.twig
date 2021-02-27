@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Settings!{% endblock %}</title>
+        <link rel="icon" type="image/ico" href="{{ asset('favicon.ico') }}" />
+        <link href="{{ asset('css/main.css') }}" rel="stylesheet"/>
+    </head>
+    <body>
+        {% block body %}{% endblock %}
+        <script src="{{ asset('js/main.js') }}"></script>
+    </body>
+</html>
