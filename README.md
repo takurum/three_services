@@ -1,24 +1,21 @@
-# Задание
+# Test task
 
-### Дано
-Есть 3 разных микросервиса, каждый из них имеет свой интерфейс настроек. Где могут быть абсолютно разные поля, разные 
-валидации и т.д. В том числе могут быть разные протоколы общения с этими микросервисами.
+### Exists
+There are 3 different microservices, each with its own settings interface. Where there can be completely different fields, different validations, etc. Including, there may be different protocols for communicating with these microservices.
 
-1й микросервис имеет REST API, и настройками для него являются поля:
+The first microservice is REST API, and the settings for it are the fields:
 - [field1: string, field2: bool, field3: array<string>]
 
-2й микросервис работает только через gRPC, и настройками для него являются поля:
+The second microservice works only by gRPC, and the settings for it are the fields:
 - [field1: string, field2: bool, field3: int]
 
-3й микросервис умеет только http, и настройками для него являются поля:
+The third microservice works only by http, and the settings for it are the fields:
 - [field1: bool, field2: int, field3: array<string, int>]
 
-### Нужно
-Написать сервис, который будет получать доступные настройки из этих микросервисов и выводить на страницу на чтение и запись. 
-Достаточно реализовать логику работы с самими сервисами. Задание необходимо выполнить с использованием фреймворка Symfony. 
-Можно использовать и другие современные фреймворки (Laravel, Slim и т.д)
+### Need to do
+Write a service that will receive available settings from these microservices and display them on the page for reading and writing.
+It is enough to implement the logic of working with the services themselves. The task needs to be done using the Symfony framework.
+Other modern frameworks can be used (Laravel, Slim, etc.)
 
-Код не обязательно должен быть запускаемым и 100% рабочим. Реальзовывать три сервиса и работы по gRPC не нужно. Тесты не 
-обязательны, но приветствуются. Будет оцениваться в первую очередь понимание ООП и умение работать с фреймворком.
-
-
+The code doesn't have to be runnable and 100% working. There is no need to implement three services and work on gRPC. Tests are not
+are required but welcome. First of all, OOP understanding and ability to work with the framework will be assessed.
